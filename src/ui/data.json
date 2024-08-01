@@ -1,0 +1,252 @@
+{
+  "nodes": [
+    {
+      "id": "René Decartes",
+      "group": "Cited Works",
+      "radius": 2
+    },
+    {
+      "id": "Philosophy",
+      "group": "Cited Works",
+      "radius": 1
+    },
+    {
+      "id": "Books",
+      "group": "Cited Works",
+      "radius": 1
+    },
+    {
+      "id": "Book2",
+      "radius": 1
+    },
+    {
+      "id": "Book3",
+      "radius": 1
+    },
+    {
+      "id": "Book4",
+      "radius": 1
+    },
+    {
+      "id": "Book5",
+      "radius": 1
+    },
+    {
+      "id": "Book6",
+      "radius": 1
+    },
+    {
+      "id": "Book7",
+      "radius": 1
+    },
+    {
+      "id": "Book8",
+      "radius": 1
+    },
+    {
+      "id": "Book9",
+      "radius": 1
+    },
+    {
+      "id": "Book10",
+      "radius": 1
+    },
+    {
+      "id": "Book11",
+      "radius": 1
+    },
+    {
+      "id": "Book12",
+      "radius": 1
+    },
+    {
+      "id": "Book13",
+      "radius": 1
+    },
+    {
+      "id": "Book14",
+      "radius": 1
+    },
+    {
+      "id": "Book15",
+      "radius": 1
+    },
+    {
+      "id": "Book16",
+      "radius": 1
+    },
+    {
+      "id": "Book17",
+      "radius": 1
+    },
+    {
+      "id": "Book18",
+      "radius": 1
+    },
+    {
+      "id": "Book19",
+      "radius": 1
+    },
+    {
+      "id": "Book20",
+      "radius": 1
+    }
+  ],
+  "links": [
+    {
+      "source": "René Decartes",
+      "target": "Books",
+      "value": 2
+    },
+    {
+      "source": "René Decartes",
+      "target": "Philosophy",
+      "value": 2
+    },
+    {
+      "source": "René Decartes",
+      "target": "Book2",
+      "value": 2
+    },
+    {
+      "source": "René Decartes",
+      "target": "Book3",
+      "value": 2
+    },
+    {
+      "source": "René Decartes",
+      "target": "Book4",
+      "value": 2
+    },
+    {
+      "source": "René Decartes",
+      "target": "Book5",
+      "value": 2
+    },
+    {
+      "source": "Philosophy",
+      "target": "Book5",
+      "value": 2
+    },
+    {
+      "source": "Philosophy",
+      "target": "Book2",
+      "value": 2
+    },
+    {
+      "source": "Philosophy",
+      "target": "Book6",
+      "value": 2
+    },
+    {
+      "source": "Philosophy",
+      "target": "Book7",
+      "value": 2
+    },
+    {
+      "source": "Philosophy",
+      "target": "Book8",
+      "value": 2
+    },
+    {
+      "source": "Philosophy",
+      "target": "Book2",
+      "value": 2
+    },
+    {
+      "source": "Books",
+      "target": "Book2",
+      "value": 2
+    },
+    {
+      "source": "Books",
+      "target": "Book9",
+      "value": 2
+    },
+    {
+      "source": "Books",
+      "target": "Book10",
+      "value": 2
+    },
+    {
+      "source": "Books",
+      "target": "Book11",
+      "value": 2
+    },
+    {
+      "source": "Books",
+      "target": "Book12",
+      "value": 2
+    },
+    {
+      "source": "Books",
+      "target": "Book13",
+      "value": 2
+    },
+    {
+      "source": "Books",
+      "target": "Book14",
+      "value": 2
+    },
+    {
+      "source": "Books",
+      "target": "Book15",
+      "value": 2
+    },
+    {
+      "source": "Books",
+      "target": "Book16",
+      "value": 2
+    },
+    {
+      "source": "René Decartes",
+      "target": "Book17",
+      "value": 2
+    },
+    {
+      "source": "René Decartes",
+      "target": "Book18",
+      "value": 2
+    },
+    {
+      "source": "René Decartes",
+      "target": "Book19",
+      "value": 2
+    },
+    {
+      "source": "René Decartes",
+      "target": "Book20",
+      "value": 2
+    },
+    {
+      "source": "Book2",
+      "target": "Book10",
+      "value": 2
+    },
+    {
+      "source": "Book2",
+      "target": "Book15",
+      "value": 2
+    },
+    {
+      "source": "Book2",
+      "target": "Book20",
+      "value": 2
+    },
+    {
+      "source": "Book4",
+      "target": "Book14",
+      "value": 2
+    },
+    {
+      "source": "Book4",
+      "target": "Book12",
+      "value": 2
+    },
+    {
+      "source": "Book4",
+      "target": "Book17",
+      "value": 2
+    }
+  ]
+}

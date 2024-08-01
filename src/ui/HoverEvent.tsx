@@ -6,6 +6,7 @@ import wiki from "../../public/home-wiki-hume.png";
 import spinoza from "../../public/home-spinoza.png";
 import decartes from "../../public/home-descartes.jpg";
 import { cn } from "@/lib/utils";
+import GraphFeature from "@/app/graph/page";
 
 const LinksFeature = () => {
   return (
@@ -204,7 +205,7 @@ const features = [
   {
     heading: "Graph",
     para: "Visualize the relationships between your notes. Find hidden patterns in your thinking through a visually engaging and interactive graph.",
-    photo: <LinksFeature />,
+    photo: <GraphFeature />,
   },
   {
     heading: "Canvas",
@@ -248,7 +249,7 @@ const HoverEvent = () => {
             <div
               className={cn(
                 "relative bg-neutral-900 border-t border-l border-neutral-800 h-96 rounded-tl-xl shadow-xl pt-8 pl-12 pr-2 text-sm md:text-base leading-5",
-                { "pl-8": index == 2 }
+                { "pl-8": index == 2, "pl-0 pt-0": index == 1 }
               )}
             >
               {feature.photo}
