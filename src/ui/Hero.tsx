@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HeroImage from "../../public/obsidian-hero.png";
 
 const Hero = () => {
   return (
@@ -30,13 +31,7 @@ const Hero = () => {
       <div className="container">
         <div dir="rtl">
           <div className="w-[50rem] max-w-none md:w-auto aspect-[1.7/1] overflow-hidden lg:mx-auto">
-            <Image
-              priority
-              src={"/obsidian-hero.png"}
-              height={1728}
-              width={2928}
-              alt="Obsidian Hero image"
-            />
+            <Image priority src={HeroImage} alt="Obsidian Hero image" />
           </div>
         </div>
       </div>
