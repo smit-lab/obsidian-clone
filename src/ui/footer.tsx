@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "./logo";
+import Logo from "./logos/logo";
 
 const Footer = () => {
   const footer_link = [
@@ -137,10 +137,30 @@ const Footer = () => {
             Follow us
           </p>
           <div className="font-semibold flex items-center gap-2">
-            <span>Twitter</span>
-            <span>Mastodon</span>
-            <span>YouTube</span>
-            <span>GitHub</span>
+            <Link
+              href={"#"}
+              className="hover:text-accent-400 transition-colors"
+            >
+              Twitter
+            </Link>
+            <Link
+              href={"#"}
+              className="hover:text-accent-400 transition-colors"
+            >
+              Mastodon
+            </Link>
+            <Link
+              href={"#"}
+              className="hover:text-accent-400 transition-colors"
+            >
+              YouTube
+            </Link>
+            <Link
+              href={"#"}
+              className="hover:text-accent-400 transition-colors"
+            >
+              GitHub
+            </Link>
           </div>
         </div>
         <p className="text-muted-foreground/80 mt-5">&copy; 2024 Obsidian</p>

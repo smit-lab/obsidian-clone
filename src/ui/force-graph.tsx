@@ -1,21 +1,14 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import data from "@/data/data.json";
 import * as d3 from "d3";
-import data from "@/ui/data.json";
-interface NodeDatum extends d3.SimulationNodeDatum {
-  id: string;
-  group: string;
-  radius: number;
-  citing_patents_count: number;
-}
-// Define a custom type for your nodes
+import React, { useEffect, useRef } from "react";
+
 interface CustomNodeDatum extends d3.SimulationNodeDatum {
   id: string;
   // group: string;
   radius: number;
 }
 
-// Define a custom type for your links
 interface CustomLinkDatum extends d3.SimulationLinkDatum<CustomNodeDatum> {
   source: string | CustomNodeDatum;
   target: string | CustomNodeDatum;
@@ -41,8 +34,6 @@ const GraphFeature: React.FC = () => {
     const g = svg.append("g");
     const simulation = d3
       .forceSimulation<CustomNodeDatum>(nodes)
-      // .alphaTarget(0.3)
-      // .velocityDecay(0.1)
       .force(
         "link",
         d3
@@ -70,14 +61,14 @@ const GraphFeature: React.FC = () => {
     const node = g
       .attr("stroke", "#a1a1a1")
       .attr("stroke-width", 1.5)
-      .selectAll("cirlce")
+      .selectAll<SVGCircleElement, CustomNodeDatum>("cirlce")
       .data(nodes)
       .join("circle")
       .attr("r", 5)
       .attr("fill", "#cacaca")
       .call(
         d3
-          .drag<SVGCircleElement, NodeDatum>()
+          .drag<SVGCircleElement, CustomNodeDatum>()
           .on("start", dragstarted)
           .on("drag", dragged)
           .on("end", dragended)
@@ -126,7 +117,7 @@ const GraphFeature: React.FC = () => {
     });
 
     function dragstarted(
-      event: d3.D3DragEvent<SVGCircleElement, NodeDatum, NodeDatum>
+      event: d3.D3DragEvent<SVGCircleElement, CustomNodeDatum, any>
     ) {
       if (!event.active) simulation.alphaTarget(0.3).restart();
       event.subject.fx = event.subject.x;
@@ -134,14 +125,14 @@ const GraphFeature: React.FC = () => {
     }
 
     function dragged(
-      event: d3.D3DragEvent<SVGCircleElement, NodeDatum, NodeDatum>
+      event: d3.D3DragEvent<SVGCircleElement, CustomNodeDatum, any>
     ) {
       event.subject.fx = event.x;
       event.subject.fy = event.y;
     }
 
     function dragended(
-      event: d3.D3DragEvent<SVGCircleElement, NodeDatum, NodeDatum>
+      event: d3.D3DragEvent<SVGCircleElement, CustomNodeDatum, any>
     ) {
       if (!event.active) simulation.alphaTarget(0);
       event.subject.fx = null;

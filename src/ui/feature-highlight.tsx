@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import LogoText from "./logo-text";
-import Obsidian from "./obsidian";
+import LogoText from "./logos/logo-text";
+import Obsidian from "./logos/obsidian";
 
 const features = [
   {

@@ -6,7 +6,7 @@ import wiki from "../../public/home-wiki-hume.png";
 import spinoza from "../../public/home-spinoza.png";
 import decartes from "../../public/home-descartes.jpg";
 import { cn } from "@/lib/utils";
-import GraphFeature from "@/app/graph/page";
+import GraphFeature from "@/ui/force-graph";
 
 const LinksFeature = () => {
   return (
